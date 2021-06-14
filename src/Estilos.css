@@ -11,7 +11,15 @@
 
 }
 .bg-blue{
+   
     background:var(--blue);
+}
+.bg-green{
+    background:var(--green);
+}
+.c-white{
+   
+    color:var(--white)!important;
 }
 .animate{
     -webkit-transition: all .2s ease-in-out;

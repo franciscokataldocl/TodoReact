@@ -1,23 +1,29 @@
 import React from 'react'
 import Todo from './Todo'
 
-const TodoList = ({todos}) => {
+const TodoList = ({ todos, setTodos, filteredTodos }) => {
 
     return (
 
         <div className="row w-100 row-cards">
 
-            
-            {todos.map((todo)=>{
-                return <Todo text={todo.text} key={todo.id}/>
+
+            {filteredTodos.map((todo) => {
+                return <Todo
+                    text={todo.text}
+                    key={todo.id}
+                    todo={todo}
+                    todos={todos}
+                    setTodos={setTodos}
+                />
             })}
-            
-
-            </div>
-  
 
 
-        
+        </div>
+
+
+
+
     )
 }
 
