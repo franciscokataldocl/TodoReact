@@ -20,6 +20,10 @@ const Todo = ({ text, todo, todos, setTodos }) => {
   };
 
 
+
+
+
+
   return (
     <>
       <div className="card animate mb-4 overflow-hidden">
